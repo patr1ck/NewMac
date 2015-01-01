@@ -19,4 +19,6 @@ function ruby_version {
 }
 
 export PS1="\u@\H \w\$(parse_git_branch)\$(ruby_version) \n\$ "
- 
+
+# Postgres 
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
