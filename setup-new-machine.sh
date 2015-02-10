@@ -43,4 +43,4 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 
 # ------- Restart Stuff -------
 
-killall Finder
+killall Finder Dock

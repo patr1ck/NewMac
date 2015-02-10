@@ -13,10 +13,21 @@ function parse_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo " ["${ref#refs/heads/}"]"
 }
-
 function ruby_version {
   echo " (`rbenv version-name`)"
 }
-
 export PS1="\u@\H \w\$(parse_git_branch)\$(ruby_version) \n\$ "
  
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Postgres 
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"
+export GEOS_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.4/lib/libgeos_c.dylib"
+export GDAL_LIBRARY_PATH="/Applications/Postgres.app/Contents/Versions/9.4/lib/libgdal.dylib"
+
+# Git stuff
+# This will overwrite the previous prompt if .oh-my-git is installed
+source ~/.oh-my-git/prompt.sh
+alias gitup="git submodule update --init --recursive"
+alias gitd="git diff | mate"
