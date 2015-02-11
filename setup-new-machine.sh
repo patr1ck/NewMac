@@ -4,6 +4,10 @@
 mv ~/.bash_profile ~/.bash_profile.original
 mv ./bash_profile ~/.bash_profile
 
+# ------- OS Level ------------
+
+# Disable local time machine backups
+sudo tmutil disablelocal
 
 # ------- Finder / UI ---------
 
@@ -42,5 +46,4 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 
 
 # ------- Restart Stuff -------
-
-killall Finder Dock
+killall Finder Dock Safari
