@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ------- dot-file app support --------
+git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git
+
 # ------- Bash profile --------
 mv ~/.bash_profile ~/.bash_profile.original
 mv ./bash_profile ~/.bash_profile
