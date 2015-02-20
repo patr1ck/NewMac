@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# ------- dot-file app support --------
+# ------- various app install --------
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git
+
+# ------- git --------
+git config --global status.submoduleSummary true
+git config --global user.name "Patrick B. Gibson"
+git config --global user.email patrick@fadeover.org
 
 # ------- Bash profile --------
 mv ~/.bash_profile ~/.bash_profile.original
