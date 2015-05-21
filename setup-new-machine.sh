@@ -10,6 +10,8 @@ git config --global user.name "Patrick B. Gibson"
 git config --global user.email patrick@fadeover.org
 git config --global status.submoduleSummary true
 git config --global diff.submodule log
+git config --global push.default simple
+git config --global alias.up '!git pull --rebase --prune && git submodule update --init --recursive'
 
 # ------- Bash profile --------
 mv ~/.bash_profile ~/.bash_profile.original
