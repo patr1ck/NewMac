@@ -12,6 +12,7 @@ git config --global status.submoduleSummary true
 git config --global diff.submodule log
 git config --global push.default simple
 git config --global alias.up '!git pull --rebase --prune && git submodule update --init --recursive'
+git config --global alias.subup 'submodule update --init --recursive'
 
 # ------- Bash profile --------
 mv ~/.bash_profile ~/.bash_profile.original
