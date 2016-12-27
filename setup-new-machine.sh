@@ -2,7 +2,8 @@
 
 # ------- various app install --------
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git
 
 # ------- git --------
